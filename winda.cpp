@@ -10,13 +10,16 @@ Winda::Winda() {
 int Winda::pietro(){
     return pietra;
 }
+int Winda::ludziee(){
+    return ludzie;
+}
 Winda::Winda(int ml, int mp) {
     maxludzi =ml;
     maxpietro =  mp;
 }
 
 void Winda::wybor(int p) {
-    if(maxpietro < p && p <0)
+    if(maxpietro < p || p<0)
     {
         cout<<"NIE MA TAKIEGO PIETRA"<<endl;
     }
@@ -30,7 +33,7 @@ void Winda::show() {
 }
 
 void Winda::wsiada(int l) {
-    if(ludzie + l>= maxludzi){
+    if(ludzie + l> maxludzi){
         cout<<"Winda jest juz pelna"<<endl;
     }
     else{

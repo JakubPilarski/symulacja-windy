@@ -12,6 +12,7 @@ private:
     static int ludzie;
 public:
     static int pietro();
+    static int ludziee();
     Winda();
     Winda(int ml, int mp);
     void wybor( int p );
